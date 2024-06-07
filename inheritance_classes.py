@@ -2,21 +2,21 @@ class Car:
     price = 1000000
 
     def horse_powers(self):
-        return print(120)
+        return 120
 
 
 class Nissan(Car):
     price = 900000
 
     def horse_powers(self):
-        return print(100)
+        return 100
 
 
-class Kia(Nissan):
+class Kia(Car):
     price = 800000
 
     def horse_powers(self):
-        return print(110)
+        return 110
 
 
 car = Car()
