@@ -20,7 +20,7 @@ class Customer(threading.Thread):
             table = self.cafe.get_free_table()
             if table:
                 print(f"Посетитель номер {self.number} сел за стол {table.number}")
-                time.sleep(5)  # время обслуживания
+                time.sleep(5) 
                 print(f"Посетитель номер {self.number} покушал и ушёл.")
                 self.cafe.release_table(table)
                 break
