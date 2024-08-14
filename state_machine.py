@@ -38,9 +38,9 @@ async def process_growth(message: types.Message):
 async def process_weight(message: types.Message):
     weight = int(message.text)
 
-    age = 25  # Замените на фактический возраст пользователя
-    growth = 175  # Замените на фактический рост пользователя
-    calories = 10 * weight + 6.25 * growth - 5 * age + 5  # Упрощенная формула для мужчин
+    age = 25  
+    growth = 175
+    calories = 10 * weight + 6.25 * growth - 5 * age + 5 
 
     await message.answer(f"Ваша суточная норма калорий: {calories:.2f} ккал")
     await dp.current_state(user=message.from_user.id).finish()
